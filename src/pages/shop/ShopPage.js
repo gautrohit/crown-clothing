@@ -10,10 +10,10 @@ export class ShopPage extends Component {
     };
   }
   render() {
-    // const { collections } = this.State;
+    const { collections } = this.state;
     return (
       <div className="shop-page">
-        {this.state.collections.map(({ id, ...otherCollection }) => (
+        {collections.map(({ id, ...otherCollection }) => (
           <PreviewCollection key={id} {...otherCollection} />
         ))}
       </div>
