@@ -49,11 +49,12 @@ export class SignIn extends Component {
             onChange={this.handleChange}
             label="password"
           />
-
-          <CustomeButton type="submit">Sign In</CustomeButton>
-          <CustomeButton onClick={signWithGoogle}>
-            Sign in with Google
-          </CustomeButton>
+          <div className="button">
+            <CustomeButton type="submit">Sign In</CustomeButton>
+            <CustomeButton onClick={signWithGoogle} isGoogleSignIn>
+              Sign in with Google
+            </CustomeButton>
+          </div>
         </form>
       </div>
     );
